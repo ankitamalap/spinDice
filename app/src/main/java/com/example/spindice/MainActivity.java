@@ -34,32 +34,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void rollDice() {
-        /*if (!spinning) {
-            int numberNew = random.nextInt(6) + 1;
-            float pivotX = dice.getWidth() / 2;
-            float pivotY = dice.getHeight() / 2;
-            Animation rotate = new RotateAnimation(numLast, numberNew, pivotX, pivotY);
-            rotate.setDuration(3000);
-            rotate.setFillAfter(true);
-            rotate.setAnimationListener(new Animation.AnimationListener() {
-                @Override
-                public void onAnimationStart(Animation animation) {
-                    spinning = true;
-                }
-
-                @Override
-                public void onAnimationEnd(Animation animation) {
-                    spinning = false;
-                }
-
-                @Override
-                public void onAnimationRepeat(Animation animation) {
-
-                }
-            });
-            numLast = numberNew;
-            dice.startAnimation(rotate);*/
-
         int numberNew = random.nextInt(6) + 1;
         dice.animate().rotationBy(180);
         switch (numberNew) {
